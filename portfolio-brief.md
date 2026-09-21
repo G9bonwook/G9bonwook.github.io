@@ -74,7 +74,10 @@
 - AI/Data: RAG, LLM, Vector Search
 
 ## Site structure and design
-Hero → About → Nudge → Arah → GriDam → Other Experience → Working Principles → Contact.
+메인: Hero → 대표 프로젝트 요약(Nudge / Arah / GriDam) → About → Other Experience → Working Principles → Contact.
+상세: projects/nudge.html, projects/arah.html, projects/gridam.html.
+역할·기간과 핵심 결과를 먼저 제시하고, 문제 → 선택 → 구현 → 검증 → 결과 순서로 상세 설명.
+프로젝트별 탐색과 본문 소제목 목차를 구분하며, 스크롤에 따라 현재 소제목 표시.
 큰 타이포그래피와 여백, 최소한의 카드, white/light gray, dark text, 차분한 blue 한 가지.
 미세한 애니메이션과 반응형. HTML/CSS/최소 Vanilla JS, GitHub Pages 호환.
 경력, 수치, 아키텍처 창작 금지. 이미지는 나중에 추가할 placeholder.

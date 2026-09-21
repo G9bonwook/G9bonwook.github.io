@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arah / DK Techin RAG | KOO BONWOOK</title>
+    <meta name="description" content="약 50개 질문을 통한 chunking 비교, 피드백과 weight decay, Airflow 자동화로 RAG 서비스 품질을 관리한 경험입니다.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arah / DK Techin RAG | KOO BONWOOK">
+    <meta property="og:description" content="약 50개 질문을 통한 chunking 비교, 피드백과 weight decay, Airflow 자동화로 RAG 서비스 품질을 관리한 경험입니다.">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body class="project-page">
+    <a class="skip-link" href="#main">본문으로 바로 가기</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="../index.html#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav id="navigation" aria-label="주 메뉴">
+          <a href="../index.html#about">About</a><a href="../index.html#work" aria-current="location">Projects</a><a href="../index.html#research">Research</a><a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <aside class="reading-guide" aria-label="포트폴리오 목차" data-context="Arah · RAG">
+      <div class="reading-status">
+        <span class="reading-caption">Arah · RAG</span><span class="reading-count">01 / 05</span><strong class="reading-title">작업과 핵심 결과</strong>
+      </div>
+      <nav class="toc-navigation" aria-label="프로젝트와 본문 목차">
+        <a class="back-to-work" href="../index.html#work">← 프로젝트 전체 보기</a>
+        <ul class="project-navigation">
+          <li>
+            <a href="nudge.html">Nudge Healthcare</a>
+          </li>
+          <li>
+            <a href="arah.html" aria-current="page">Arah · RAG</a>
+          </li>
+          <li>
+            <a href="gridam.html">GriDam · CDC</a>
+          </li>
+        </ul>
+        <p class="toc-caption">이 프로젝트의 내용</p>
+        <ol class="toc-list">
+          <li>
+            <a href="#overview" data-section data-label="작업과 핵심 결과" data-nav=""><span>01</span>작업과 핵심 결과</a>
+          </li>
+          <li>
+            <a href="#context" data-section data-label="문제와 선택" data-nav=""><span>02</span>문제와 선택</a>
+          </li>
+          <li>
+            <a href="#implementation" data-section data-label="구현과 데이터 흐름" data-nav=""><span>03</span>구현과 데이터 흐름</a>
+          </li>
+          <li>
+            <a href="#verification" data-section data-label="검증 근거" data-nav=""><span>04</span>검증 근거</a>
+          </li>
+          <li>
+            <a href="#result" data-section data-label="결과" data-nav=""><span>05</span>결과</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="reading-controls">
+        <label class="sr-only" for="section-select">본문 목차 또는 다른 프로젝트로 이동</label>
+        <select id="section-select">
+          <optgroup label="현재 페이지">
+            <option value="#overview">01 / 작업과 핵심 결과</option>
+            <option value="#context">02 / 문제와 선택</option>
+            <option value="#implementation">03 / 구현과 데이터 흐름</option>
+            <option value="#verification">04 / 검증 근거</option>
+            <option value="#result">05 / 결과</option>
+          </optgroup>
+          <optgroup label="프로젝트 이동">
+            <option value="nudge.html">Nudge Healthcare</option>
+            <option value="gridam.html">GriDam · CDC</option>
+          </optgroup>
+          <option value="../index.html#work">프로젝트 전체 보기</option>
+        </select>
+        <div class="reading-pagination">
+          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#context" aria-label="다음: 문제와 선택"><span>다음</span> →</a>
+        </div>
+      </div>
+    </aside>
+    <main id="main">
+      <div class="container detail-container">
+        <section class="project-overview" id="overview" aria-labelledby="overview-title">
+          <a class="back-to-work" href="../index.html#work">← 프로젝트 전체 보기</a><p class="eyebrow">PROJECT 02 / AI SERVICE</p><h1 id="overview-title">Arah / DK Techin RAG</h1><p class="project-statement">AI 서비스는 만들고 끝나는 것이 아니라,<br>계속 정확해야 합니다.</p>
+          <dl class="project-facts">
+            <div>
+              <dt>역할 / 작업</dt><dd>Chunking 실험 · 피드백 구조 설계 · Airflow 자동화</dd>
+            </div>
+            <div>
+              <dt>기간</dt><dd>2025.07 — 2025.08</dd>
+            </div>
+          </dl>
+          <div class="outcome-summary">
+            <strong>약 50개 테스트 질문</strong><p>정답 문서의 Top-k 포함 여부로 chunking 방식을 비교했습니다.</p><span class="badge">DK Techin 우수 팀</span>
+          </div>
+        </section>
+        <section class="detail-section" id="context" aria-labelledby="context-title">
+          <p class="eyebrow">PROBLEM → DECISION</p><h2 id="context-title">문서 구조와 피드백의 영향을 함께 고려했습니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">PROBLEM</p><h3>제목 중심 문서, 오래된 피드백</h3><p>사내 규정 / FAQ 기반 RAG 챗봇에서 문서가 제목 중심으로 구성되어 있음을 분석했습니다. 오래된 feedback weight가 신규 문서를 밀어내는 문제도 고려했습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">DECISION</p><h3>제목 기반 chunking과 시간 기반 weight decay</h3><p>여러 chunking 방식을 비교해 제목 기반 방식을 적용했습니다. 오래된 피드백의 영향을 줄이기 위해 시간 기반 weight decay를 설계했습니다.</p>
+          </div>
+        </section>
+        <section class="detail-section" id="implementation" aria-labelledby="implementation-title">
+          <p class="eyebrow">IMPLEMENTATION</p><h2 id="implementation-title">검색부터 피드백까지 관리 흐름을 연결했습니다.</h2>
+          <ol class="process-list">
+            <li>
+              <span class="small-index">01</span>
+              <div>
+                <h3>Document Structure & Chunking</h3><p>제목 중심 문서 구조를 반영해 검색에 사용할 chunk를 구성했습니다.</p>
+              </div>
+            </li>
+            <li>
+              <span class="small-index">02</span>
+              <div>
+                <h3>Feedback Structure</h3><p>사용자 평가와 문제 사유를 함께 저장하는 구조를 설계했습니다.</p>
+              </div>
+            </li>
+            <li>
+              <span class="small-index">03</span>
+              <div>
+                <h3>Weight Decay</h3><p>오래된 feedback의 weight를 시간에 따라 감소시키도록 설계했습니다.</p>
+              </div>
+            </li>
+            <li>
+              <span class="small-index">04</span>
+              <div>
+                <h3>Airflow Automation</h3><p>품질 관리 흐름을 Airflow로 자동화했습니다.</p>
+              </div>
+            </li>
+          </ol>
+          <!-- Replace the div with an img.project-image; use the actual image dimensions and descriptive alt text. -->
+          <figure class="visual-placeholder">
+            <div class="image-placeholder" role="img" aria-label="Arah RAG 아키텍처 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+          <!-- Replace the div with an img.project-image; use the actual image dimensions and descriptive alt text. -->
+          <figure class="visual-placeholder">
+            <div class="image-placeholder" role="img" aria-label="Arah Airflow DAG 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Airflow DAG
+            </div>
+          </figure>
+        </section>
+        <section class="detail-section" id="verification" aria-labelledby="verification-title">
+          <p class="eyebrow">VERIFICATION / CHUNKING EXPERIMENT</p><h2 id="verification-title">약 50개의 질문으로 검색 결과를 비교했습니다.</h2><p class="detail-copy">여러 chunking 방식에 대해 <strong>정답 문서가 Top-k에 포함되는지</strong>를 평가 기준으로 삼았습니다. 테스트 질문 약 50개를 활용한 비교를 바탕으로 제목 기반 chunking을 적용했습니다.</p>
+        </section>
+        <section class="detail-section" id="result" aria-labelledby="result-title">
+          <p class="eyebrow">RESULT</p><h2 id="result-title">지속적으로 품질을 관리하는 AI 서비스를 설계했습니다.</h2><p class="detail-copy">문서 구조와 검색 결과를 확인하고, 사용자 평가와 문제 사유를 남기며, 시간에 따라 피드백의 영향을 조절하는 흐름을 설계했습니다. DK Techin 우수 팀에 선정됐습니다.</p>
+        </section>
+        <nav class="project-pager" aria-label="프로젝트 이동">
+          <a href="nudge.html"><span>이전 프로젝트</span><strong>Nudge Healthcare →</strong></a><a href="gridam.html"><span>다음 프로젝트</span><strong>GriDam · CDC →</strong></a>
+        </nav>
+      </div>
+    </main>
+    <footer class="container site-footer">
+      <span>© 2026 KOO BONWOOK</span><a href="#overview">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

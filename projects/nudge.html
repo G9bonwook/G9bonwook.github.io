@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nudge Healthcare | KOO BONWOOK</title>
+    <meta name="description" content="AU/Churn 계산 구조 개선과 커머스 KPI 파이프라인. 20일 백필 기준 처리 비용과 기존 결과 40행 비교로 검증한 경험입니다.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nudge Healthcare | KOO BONWOOK">
+    <meta property="og:description" content="AU/Churn 계산 구조 개선과 커머스 KPI 파이프라인. 20일 백필 기준 처리 비용과 기존 결과 40행 비교로 검증한 경험입니다.">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body class="project-page">
+    <a class="skip-link" href="#main">본문으로 바로 가기</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="../index.html#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav id="navigation" aria-label="주 메뉴">
+          <a href="../index.html#about">About</a><a href="../index.html#work" aria-current="location">Projects</a><a href="../index.html#research">Research</a><a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <aside class="reading-guide" aria-label="포트폴리오 목차" data-context="Nudge Healthcare">
+      <div class="reading-status">
+        <span class="reading-caption">Nudge Healthcare</span><span class="reading-count">01 / 07</span><strong class="reading-title">역할과 핵심 결과</strong>
+      </div>
+      <nav class="toc-navigation" aria-label="프로젝트와 본문 목차">
+        <a class="back-to-work" href="../index.html#work">← 프로젝트 전체 보기</a>
+        <ul class="project-navigation">
+          <li>
+            <a href="nudge.html" aria-current="page">Nudge Healthcare</a>
+          </li>
+          <li>
+            <a href="arah.html">Arah · RAG</a>
+          </li>
+          <li>
+            <a href="gridam.html">GriDam · CDC</a>
+          </li>
+        </ul>
+        <p class="toc-caption">이 프로젝트의 내용</p>
+        <ol class="toc-list">
+          <li>
+            <a href="#overview" data-section data-label="역할과 핵심 결과" data-nav=""><span>01</span>역할과 핵심 결과</a>
+          </li>
+          <li>
+            <a href="#au-context" data-section data-label="AU/Churn · 문제와 선택" data-nav=""><span>02</span>AU/Churn · 문제와 선택</a>
+          </li>
+          <li>
+            <a href="#au-build" data-section data-label="AU/Churn · 구현" data-nav=""><span>03</span>AU/Churn · 구현</a>
+          </li>
+          <li>
+            <a href="#au-check" data-section data-label="AU/Churn · 검증과 결과" data-nav=""><span>04</span>AU/Churn · 검증과 결과</a>
+          </li>
+          <li>
+            <a href="#commerce-context" data-section data-label="Commerce · 문제와 선택" data-nav=""><span>05</span>Commerce · 문제와 선택</a>
+          </li>
+          <li>
+            <a href="#commerce-build" data-section data-label="Commerce · 구현" data-nav=""><span>06</span>Commerce · 구현</a>
+          </li>
+          <li>
+            <a href="#commerce-check" data-section data-label="Commerce · 검증과 결과" data-nav=""><span>07</span>Commerce · 검증과 결과</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="reading-controls">
+        <label class="sr-only" for="section-select">본문 목차 또는 다른 프로젝트로 이동</label>
+        <select id="section-select">
+          <optgroup label="현재 페이지">
+            <option value="#overview">01 / 역할과 핵심 결과</option>
+            <option value="#au-context">02 / AU/Churn · 문제와 선택</option>
+            <option value="#au-build">03 / AU/Churn · 구현</option>
+            <option value="#au-check">04 / AU/Churn · 검증과 결과</option>
+            <option value="#commerce-context">05 / Commerce · 문제와 선택</option>
+            <option value="#commerce-build">06 / Commerce · 구현</option>
+            <option value="#commerce-check">07 / Commerce · 검증과 결과</option>
+          </optgroup>
+          <optgroup label="프로젝트 이동">
+            <option value="arah.html">Arah · RAG</option>
+            <option value="gridam.html">GriDam · CDC</option>
+          </optgroup>
+          <option value="../index.html#work">프로젝트 전체 보기</option>
+        </select>
+        <div class="reading-pagination">
+          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#au-context" aria-label="다음: AU/Churn · 문제와 선택"><span>다음</span> →</a>
+        </div>
+      </div>
+    </aside>
+    <main id="main">
+      <div class="container detail-container">
+        <section class="project-overview" id="overview" aria-labelledby="overview-title">
+          <a class="back-to-work" href="../index.html#work">← 프로젝트 전체 보기</a><p class="eyebrow">EXPERIENCE 01 / DATA ENGINEERING</p><h1 id="overview-title">Nudge Healthcare</h1><p class="project-statement">운영 데이터를<br>의사결정 가능한 데이터로 만들었습니다.</p>
+          <dl class="project-facts">
+            <div>
+              <dt>역할 / 작업</dt><dd>Data Engineering Intern</dd>
+            </div>
+            <div>
+              <dt>기간</dt><dd>2026.04 — 2026.07</dd>
+            </div>
+          </dl>
+          <div class="metrics">
+            <div>
+              <strong>14<span>×</span></strong><p>slot_ms 감소</p><span>20일 백필 기준 · 약 14배</span>
+            </div>
+            <div>
+              <strong>7.8<span>×</span></strong><p>shuffle 감소</p><span>20일 백필 기준 · 약 7.8배</span>
+            </div>
+            <div>
+              <strong>0</strong><p>mismatch</p><span>기존 결과 40행 · 셀 단위 비교</span>
+            </div>
+          </div>
+        </section>
+        <section class="detail-section" id="au-context" aria-labelledby="au-context-title">
+          <p class="eyebrow">CASE 01 / AU · CHURN</p><h2 id="au-context-title">장기 백필에 맞는 계산 구조를 선택했습니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">PROBLEM</p><h3>범위 JOIN에서 발생한 fan-out</h3><p>기존 BETWEEN 범위 JOIN은 과거 접속과 미래 재방문을 계산했습니다. 장기 백필 시 fan-out 문제를 확인했습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">DECISION</p><h3>데이터 규모와 처리 조건에 맞는 구조</h3><p>범위 JOIN을 UNIX_DATE + Window Function 기반 계산으로 바꾸기로 했습니다.</p>
+          </div>
+        </section>
+        <section class="detail-section" id="au-build" aria-labelledby="au-build-title">
+          <p class="eyebrow">CASE 01 / IMPLEMENTATION</p><h2 id="au-build-title">UNIX_DATE + Window Function으로 리팩터링했습니다.</h2><p class="detail-copy">과거 접속과 미래 재방문을 계산하는 AU / Churn 로직을 Window Function 기반으로 개선했습니다.</p><!-- Replace the div with an img.project-image; use the actual image dimensions and descriptive alt text. -->
+          <figure class="visual-placeholder">
+            <div class="image-placeholder" role="img" aria-label="Nudge AU/Churn 계산 구조 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+        </section>
+        <section class="detail-section" id="au-check" aria-labelledby="au-check-title">
+          <p class="eyebrow">CASE 01 / VERIFICATION → RESULT</p><h2 id="au-check-title">결과를 비교하고, 처리 비용을 확인했습니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">VERIFICATION</p><h3>기존 결과 40행을 셀 단위로 비교</h3><p>변경 전후 결과를 비교해 mismatch 0을 확인했습니다. 처리 비용은 20일 백필을 기준으로 확인했습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">RESULT</p><h3>결과 불일치 없이 처리 비용 감소</h3><p>20일 백필 기준 slot_ms는 약 14배, shuffle은 약 7.8배 감소했습니다. 단순한 속도 개선보다 데이터 규모와 처리 조건에 맞는 구조로 개선한 경험입니다.</p>
+          </div>
+        </section>
+        <section class="detail-section" id="commerce-context" aria-labelledby="commerce-context-title">
+          <p class="eyebrow">CASE 02 / SHORT-FORM COMMERCE</p><h2 id="commerce-context-title">같은 주문 데이터도 산출 기준에 따라 판단이 달라집니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">PROBLEM</p><h3>노출부터 구매까지 연결되는 KPI</h3><p>외부 API와 Commerce DB를 기반으로 clip exposure → purchase 전환 지표를 구성하고, 주문 단위 쿠폰을 상품별 KPI에 반영해야 했습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">DECISION</p><h3>상품별 가격 비율로 쿠폰 배분</h3><p>주문 단위 쿠폰을 상품별 가격 비율로 배분하는 산출 기준을 적용했습니다.</p>
+          </div>
+        </section>
+        <section class="detail-section" id="commerce-build" aria-labelledby="commerce-build-title">
+          <p class="eyebrow">CASE 02 / IMPLEMENTATION</p><h2 id="commerce-build-title">Raw 적재에서 분석용 mart까지 연결했습니다.</h2>
+          <ol class="flow flow-three" aria-label="커머스 KPI 데이터 흐름">
+            <li>
+              외부 API + Commerce DB
+            </li>
+            <li>
+              GCS<span>API raw 적재</span>
+            </li>
+            <li>
+              BigQuery / dbt<span>Mart</span>
+            </li>
+          </ol>
+          <p class="detail-copy">외부 API의 raw 데이터를 GCS에 저장하고, Commerce DB와 함께 BigQuery / dbt 기반 mart를 구성했습니다.</p><!-- Replace the div with an img.project-image; use the actual image dimensions and descriptive alt text. -->
+          <figure class="visual-placeholder">
+            <div class="image-placeholder" role="img" aria-label="Nudge Commerce KPI 파이프라인 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+        </section>
+        <section class="detail-section" id="commerce-check" aria-labelledby="commerce-check-title">
+          <p class="eyebrow">CASE 02 / VERIFICATION → RESULT</p><h2 id="commerce-check-title">데이터 품질에 업무 맥락과 산출 기준을 포함했습니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">VERIFICATION</p><h3>검증 근거</h3><p>검증 절차와 정량 지표는 추후 보완 예정입니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">RESULT</p><h3>Clip exposure → purchase 전환 지표 구성</h3><p>동일한 주문 데이터도 쿠폰 배분 등 산출 기준에 따라 현업 판단이 달라질 수 있음을 경험했습니다. 데이터 품질은 값의 정확성뿐 아니라 업무 맥락과 산출 기준까지 포함한다고 생각합니다.</p>
+          </div>
+        </section>
+        <nav class="project-pager" aria-label="프로젝트 이동">
+          <a href="../index.html#work"><span>전체 경험</span><strong>프로젝트 목록으로 ↗</strong></a><a href="arah.html"><span>다음 프로젝트</span><strong>Arah · RAG →</strong></a>
+        </nav>
+      </div>
+    </main>
+    <footer class="container site-footer">
+      <span>© 2026 KOO BONWOOK</span><a href="#overview">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
