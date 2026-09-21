@@ -78,7 +78,7 @@
 상세: projects/nudge.html, projects/arah.html, projects/gridam.html.
 역할·기간과 핵심 결과를 먼저 제시하고, 문제 → 선택 → 구현 → 검증 → 결과 순서로 상세 설명.
 프로젝트별 탐색과 본문 소제목 목차를 구분하며, 스크롤에 따라 현재 소제목 표시.
-큰 타이포그래피와 여백, 최소한의 카드, white/light gray, dark text. Blue는 탐색과 링크에, 보조 teal은 분야 표시와 검증·성과 영역에 사용.
+큰 타이포그래피와 여백, 최소한의 카드, white/light gray, dark text. Blue는 탐색과 링크에 유지. 분야 표시와 검증·성과 영역은 채도를 낮춘 브라운과 연한 샌드 배경 사용.
 미세한 애니메이션과 반응형. HTML/CSS/최소 Vanilla JS, GitHub Pages 호환.
 경력, 수치, 아키텍처 창작 금지. 이미지는 나중에 추가할 placeholder.
 프로젝트 흐름: Problem → Decision → Implementation → Verification → Result.

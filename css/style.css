@@ -5,9 +5,9 @@
   --color-text-secondary:#596575;
   --color-border:#e5e8eb;
   --color-accent:#246bce;
-  --color-support:#147565;
-  --color-support-soft:#edf7f3;
-  --color-support-border:#c9e2d9;
+  --color-support:#8a6148;
+  --color-support-soft:#f8f3ed;
+  --color-support-border:#e6d8ca;
   --content-width:1160px;
   --header-height:80px;
   --radius:12px;
@@ -1220,7 +1220,7 @@ h1 {
   .project-pager strong { font-size: 14px; }
 }
 
-/* Blue guides navigation; teal highlights areas of expertise and evidence. */
+/* Blue guides navigation; muted brown and sand highlight expertise and evidence. */
 .status-dot { background: var(--color-support); }
 .hero-bottom > span { color: var(--color-support); }
 .work-identity > .small-index {
