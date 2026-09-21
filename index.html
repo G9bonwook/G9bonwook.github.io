@@ -1,1 +1,353 @@
-G9bonwook's github page
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOO BONWOOK | Data Engineering Portfolio</title>
+    <meta name="description" content="Data Engineering, Data Quality, AI Service를 중심으로 데이터 파이프라인과 AI 서비스를 설계한 구본욱의 포트폴리오입니다.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KOO BONWOOK | Data Engineering Portfolio">
+    <meta property="og:description" content="Data Engineering, Data Quality, AI Service를 중심으로 데이터 파이프라인과 AI 서비스를 설계한 구본욱의 포트폴리오입니다.">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로 가기</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
+        <nav id="navigation" aria-label="주 메뉴">
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> DATA ENGINEERING PORTFOLIO</p>
+          <h1 id="hero-title">데이터를 쌓는 것보다,<br><span class="accent">믿고 사용할 수 있게</span><br>만드는 일을 합니다.</h1>
+          <p class="hero-specialties">Data Engineering <span>·</span> Data Quality <span>·</span> AI Service</p>
+          <p class="hero-description">업무 맥락과 데이터의 의미를 이해하고, <br>검증 가능한 데이터 흐름과 지속 가능한 서비스를 설계합니다.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">View Experience <span aria-hidden="true">↗</span></a><a class="button button-text" data-contact="github" hidden>GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>CONTEXT → VERIFICATION → OPERATION</span><a href="#about" aria-label="소개 섹션으로 이동">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+      <section class="section section-soft" id="about" aria-labelledby="about-title">
+        <div class="container reveal">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 id="about-title">기술보다 먼저,<br>데이터가 왜 필요한지 봅니다.</h2>
+          <p class="profile-line">구본욱 <span>·</span> 가천대학교 AI·소프트웨어학부</p><p class="section-intro">같은 데이터도 업무 맥락과 산출 기준에 따라 다른 판단을 만듭니다.<br class="desktop-break"> 데이터의 의미를 이해하고, 결과를 검증하며, 운영까지 이어지는 구조를 고민합니다.</p>
+          <div class="expertise-grid">
+            <div class="expertise">
+              <span class="small-index">01</span><h3>Data Pipeline</h3><p>수집부터 적재, 변환까지.<br>업무에 필요한 데이터가 이어지는 흐름을 설계합니다.</p>
+            </div>
+            <div class="expertise">
+              <span class="small-index">02</span><h3>Data Quality</h3><p>산출 기준부터 변경 전후 결과까지.<br>데이터를 믿고 사용할 수 있는 근거를 확인합니다.</p>
+            </div>
+            <div class="expertise">
+              <span class="small-index">03</span><h3>AI Service</h3><p>문서 구조부터 피드백과 자동화까지.<br>지속적으로 품질을 관리하는 서비스를 고민합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="reveal">
+            <p class="eyebrow">02 / EXPERIENCE</p>
+            <div class="project-heading">
+              <div>
+                <h2 id="experience-title">Nudge Healthcare</h2><p class="role">Data Engineering Intern</p>
+              </div>
+              <p class="date">2026.04 — 2026.07</p>
+            </div>
+            <p class="project-statement">운영 데이터를<br>의사결정 가능한 데이터로 만들었습니다.</p>
+          </div>
+          <!-- Replace the placeholder div with an img using class="project-image" and descriptive alt text. -->
+          <figure class="visual-placeholder reveal">
+            <div class="image-placeholder" role="img" aria-label="Nudge Healthcare 아키텍처 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+          <article class="case-study reveal" aria-labelledby="au-title">
+            <div class="case-heading">
+              <p class="eyebrow">CASE 01</p><h3 id="au-title">AU / Churn 계산 구조 개선</h3>
+            </div>
+            <dl class="case-details">
+              <div>
+                <dt>Problem</dt><dd>BETWEEN 범위 JOIN으로 과거 접속과 미래 재방문을 계산하던 구조에서, 장기 백필 시 fan-out 문제를 확인했습니다.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt><dd>데이터 규모와 처리 조건에 맞게 범위 JOIN을 Window Function 기반 구조로 바꾸기로 했습니다.</dd>
+              </div>
+              <div>
+                <dt>Implementation</dt><dd>UNIX_DATE + Window Function으로 AU / Churn 계산 로직을 리팩터링했습니다.</dd>
+              </div>
+              <div>
+                <dt>Verification</dt><dd>기존 결과 40행을 셀 단위로 비교해 mismatch 0을 확인하고, 20일 백필 기준 처리 지표를 비교했습니다.</dd>
+              </div>
+              <div>
+                <dt>Result</dt><dd>결과 불일치 없이 처리 비용을 줄였습니다.</dd>
+              </div>
+            </dl>
+            <div class="metrics">
+              <div>
+                <strong>14<span>×</span></strong><p>slot_ms 감소</p><span>20일 백필 기준 · 약 14배 감소</span>
+              </div>
+              <div>
+                <strong>7.8<span>×</span></strong><p>shuffle 감소</p><span>20일 백필 기준 · 약 7.8배 감소</span>
+              </div>
+              <div>
+                <strong>0</strong><p>mismatch</p><span>기존 결과 40행 · 셀 단위 비교</span>
+              </div>
+            </div>
+          </article>
+          <article class="case-study reveal" aria-labelledby="commerce-title">
+            <div class="case-heading">
+              <p class="eyebrow">CASE 02</p><h3 id="commerce-title">Short-form Commerce KPI Pipeline</h3>
+            </div>
+            <p class="case-lead">같은 주문 데이터라도,<br>산출 기준에 따라 다른 판단을 만들 수 있습니다.</p>
+            <dl class="case-details">
+              <div>
+                <dt>Problem</dt><dd>노출부터 구매까지의 전환 지표를 구성하고, 주문 단위 쿠폰을 상품별 KPI에 반영해야 했습니다.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt><dd>주문 단위 쿠폰을 상품별 가격 비율로 배분하는 산출 기준을 적용했습니다.</dd>
+              </div>
+              <div>
+                <dt>Implementation</dt><dd>외부 API raw 데이터를 GCS에 적재하고 Commerce DB와 함께 BigQuery / dbt mart를 구성했습니다.</dd>
+              </div>
+              <div>
+                <dt>Verification</dt><dd>검증 절차와 정량 지표는 추후 보완 예정입니다.</dd>
+              </div>
+              <div>
+                <dt>Result</dt><dd>Clip exposure → purchase 전환 지표를 구성하며, 산출 기준이 현업 판단에 영향을 준다는 것을 경험했습니다.</dd>
+              </div>
+            </dl>
+            <ol class="flow flow-three" aria-label="커머스 KPI 데이터 흐름">
+              <li>
+                외부 API + Commerce DB
+              </li>
+              <li>
+                GCS <span>Raw 적재</span>
+              </li>
+              <li>
+                BigQuery / dbt <span>Mart</span>
+              </li>
+            </ol>
+            <div class="text-columns">
+              <div>
+                <h4>노출에서 구매까지</h4><p>Clip exposure → purchase 흐름을 연결해 커머스 KPI를 구성했습니다.</p>
+              </div>
+              <div>
+                <h4>숫자보다 먼저, 산출 기준</h4><p>주문 단위 쿠폰을 상품별 가격 비율로 배분하며, 업무 맥락과 산출 기준이 데이터 품질에 영향을 준다는 것을 경험했습니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section section-soft" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="reveal">
+            <p class="eyebrow">03 / SELECTED PROJECTS</p><h2 id="projects-title">AI 서비스는 만들고 끝나는 것이 아니라,<br>계속 정확해야 합니다.</h2>
+            <div class="project-label">
+              <h3>Arah / DK Techin RAG</h3><span class="badge">DK Techin 우수 팀</span>
+            </div>
+            <p class="role">사내 규정 / FAQ 기반 RAG 챗봇 <span>· 2025.07 — 2025.08</span></p>
+          </div>
+          <figure class="visual-placeholder reveal">
+            <div class="image-placeholder" role="img" aria-label="Arah RAG 아키텍처 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+          <div class="reveal">
+            <p class="case-lead">문서 구조에서 사용자 피드백까지.<br>품질을 지속적으로 관리하는 흐름을 설계했습니다.</p>
+            <dl class="case-details">
+              <div>
+                <dt>Problem</dt><dd>제목 중심 사내 문서에 맞는 검색 구조와, 오래된 피드백이 신규 문서를 밀어내는 문제를 고려해야 했습니다.</dd>
+              </div>
+              <div>
+                <dt>Decision</dt><dd>문서 구조에 맞는 chunking을 비교하고, 시간 기반 weight decay로 피드백의 영향을 조절하도록 설계했습니다.</dd>
+              </div>
+              <div>
+                <dt>Implementation</dt><dd>제목 기반 chunking, 사용자 평가와 문제 사유 저장, weight decay, Airflow 자동화를 연결했습니다.</dd>
+              </div>
+              <div>
+                <dt>Verification</dt><dd>약 50개 테스트 질문으로 여러 chunking 방식을 비교했습니다. 정답 문서가 Top-k에 포함되는지를 기준으로 평가했습니다.</dd>
+              </div>
+              <div>
+                <dt>Result</dt><dd>지속적인 품질 관리 구조를 설계했고, DK Techin 우수 팀에 선정됐습니다.</dd>
+              </div>
+            </dl>
+            <ol class="process-list">
+              <li>
+                <span class="small-index">01</span>
+                <div>
+                  <h4>Document Structure</h4><p>사내 규정과 FAQ 문서가 제목 중심으로 구성되어 있음을 분석했습니다.</p>
+                </div>
+              </li>
+              <li>
+                <span class="small-index">02</span>
+                <div>
+                  <h4>Chunking Experiment</h4><p>약 50개의 테스트 질문으로 정답 문서의 Top-k 포함 여부를 평가하고, 제목 기반 chunking을 적용했습니다.</p>
+                </div>
+              </li>
+              <li>
+                <span class="small-index">03</span>
+                <div>
+                  <h4>Feedback Structure</h4><p>사용자 평가와 문제 사유를 함께 저장해 품질 개선에 활용할 수 있도록 했습니다.</p>
+                </div>
+              </li>
+              <li>
+                <span class="small-index">04</span>
+                <div>
+                  <h4>Weight Decay</h4><p>오래된 feedback이 신규 문서를 밀어내는 문제를 줄이기 위해 시간 기반 weight decay를 설계했습니다.</p>
+                </div>
+              </li>
+              <li>
+                <span class="small-index">05</span>
+                <div>
+                  <h4>Airflow Automation</h4><p>Airflow로 품질 관리 흐름을 자동화했습니다.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <figure class="visual-placeholder compact reveal">
+            <div class="image-placeholder" role="img" aria-label="Arah Airflow DAG 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Airflow DAG
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="gridam-title">
+        <div class="container">
+          <div class="reveal">
+            <p class="eyebrow">SELECTED PROJECT / GRIDAM</p><h2 id="gridam-title">저장과 분석 사이의<br>데이터 일관성을 설계했습니다.</h2><p class="role">GriDam · LLM 기반 감정 일기 서비스<br>2025.03 — 2025.06</p>
+          </div>
+          <figure class="visual-placeholder reveal">
+            <div class="image-placeholder" role="img" aria-label="GriDam CDC 아키텍처 이미지 준비 영역">
+              <span class="placeholder-symbol" aria-hidden="true">＋</span>Architecture image
+            </div>
+          </figure>
+          <dl class="case-details reveal">
+            <div>
+              <dt>Problem</dt><dd>일기 저장과 감정 분석을 분리하면서, DB commit과 event publish가 일치하지 않을 때 발생할 수 있는 데이터 불일치 위험을 고려했습니다.</dd>
+            </div>
+            <div>
+              <dt>Decision</dt><dd>MySQL을 Source of Truth로 두고 log-based CDC를 선택했습니다. </dd>
+            </div>
+            <div>
+              <dt>Implementation</dt><dd>Binlog 기반 변경 데이터를 Debezium과 Kafka, Python Consumer를 거쳐 MongoDB로 전달했습니다. Schema Registry + Avro를 적용하고 MySQL / MongoDB / Redis의 역할을 분리했습니다.</dd>
+            </div>
+            <div>
+              <dt>Verification</dt><dd>인덱스 / 캐시 튜닝 전후 조회 API 응답 시간을 비교했습니다. CDC 일관성 검증의 세부 절차는 추후 보완 예정입니다.</dd>
+            </div>
+            <div>
+              <dt>Result</dt><dd>일기 저장과 감정 분석을 분리하는 데이터 흐름을 구성했습니다. 인덱스 / 캐시 최적화로 조회 API 응답 시간을 5초에서 1초로 개선했습니다.</dd>
+            </div>
+          </dl>
+          <div class="reveal">
+            <h3 class="flow-title">Data Flow</h3>
+            <ol class="flow flow-six" aria-label="CDC 데이터 흐름">
+              <li>
+                MySQL
+              </li>
+              <li>
+                Binlog
+              </li>
+              <li>
+                Debezium
+              </li>
+              <li>
+                Kafka
+              </li>
+              <li>
+                Python Consumer
+              </li>
+              <li>
+                MongoDB
+              </li>
+            </ol>
+            <div class="result-strip">
+              <div>
+                <p class="eyebrow">RESULT / QUERY PERFORMANCE</p><h3>인덱스와 캐시 최적화</h3><p>조회 API 응답 시간 개선</p>
+              </div>
+              <div class="result-number">
+                <span>5초</span><span class="result-arrow" aria-hidden="true">→</span><strong>1초</strong>
+              </div>
+            </div>
+            <p class="metric-note">조회 성능 개선은 인덱스 / 캐시 최적화의 결과입니다.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft" id="research" aria-labelledby="research-title">
+        <div class="container reveal">
+          <p class="eyebrow">04 / OTHER EXPERIENCE & RESEARCH</p><h2 id="research-title">다른 문제에서도,<br>같은 질문을 이어갑니다.</h2>
+          <article class="research-row">
+            <div>
+              <span class="small-index">DOMAIN UNDERSTANDING</span><h3>Oracle Bio <br>Data Expert Track</h3>
+            </div>
+            <div>
+              <h4>모호한 도메인 요구를 실제 데이터 기준으로 구체화했습니다.</h4><p>IT 3명과 Bio 3명이 MIMIC-IV 기반 패혈증 사망 위험 예측에 협업하며 혈압 / 생체신호의 도메인 용어를 구체화했습니다. Systolic / diastolic / mean의 구분과 단위 차이를 확인하고 codebook으로 연결했습니다.</p><p class="codebook">domain term ↔ table ↔ column ↔ datatype ↔ unit ↔ normal range</p>
+            </div>
+          </article>
+          <article class="research-row">
+            <div>
+              <span class="small-index">HYPOTHESIS & VERIFICATION</span><h3>Wireless TCP <br>Research</h3><p class="date">2023.12 — 2025.06</p>
+            </div>
+            <div>
+              <h4>반복보다 가설과 검증을 먼저 생각하게 됐습니다.</h4><p>무선 TCP slow start 연구에서 반복 횟수 위주 실험을 hypothesis-first 접근으로 바꾸고, 변수, 조건, 예상 결과, 검증 방법을 먼저 정리했습니다. iperf3 완료 시점과 실제 파일 수신 완료를 비교하고, configured delay와 observed RTT를 검증했습니다.</p>
+            </div>
+          </article>
+          <article class="research-row">
+            <div>
+              <span class="small-index">SENSOR & AI</span><h3>NET Challenge Camp</h3>
+            </div>
+            <div>
+              <h4>센서와 AI를 함께 사용해 오탐을 줄였습니다.</h4><p>터널 화재 대피 지원 플랫폼에서 YOLO 화재 감지에 smoke sensor와 detection region 조건을 결합해 차량 후미등으로 인한 false positive를 줄였습니다.</p>
+              <div class="award-list">
+                <span class="badge">Silver Award</span><span class="badge">KT Special Award</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section principles" aria-labelledby="principles-title">
+        <div class="container reveal">
+          <p class="eyebrow">05 / WORKING PRINCIPLES</p><h2 id="principles-title">파이프라인은 실행되는 것이 아니라,<br><span class="accent">신뢰될 수 있어야 합니다.</span></h2>
+          <div class="expertise-grid">
+            <div class="expertise">
+              <span class="small-index">01</span><h3>Context</h3><p>데이터가 어떤 업무에서<br>생성되는지 먼저 이해합니다.</p>
+            </div>
+            <div class="expertise">
+              <span class="small-index">02</span><h3>Verification</h3><p>변경 전후 결과를<br>직접 비교하고 검증합니다.</p>
+            </div>
+            <div class="expertise">
+              <span class="small-index">03</span><h3>Operation</h3><p>한 번 동작하는 구조보다<br>지속 가능한 구조를 지향합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contact section-soft" id="contact" aria-labelledby="contact-title">
+        <div class="container reveal">
+          <p class="eyebrow">06 / CONTACT</p><h2 id="contact-title">Let's build<br>reliable data<span class="accent">.</span></h2>
+          <div class="contact-bottom">
+            <p class="wordmark">KOO BONWOOK</p>
+            <div class="contact-links">
+              <a data-contact="github" hidden>GitHub ↗</a><a data-contact="email" hidden>Email ↗</a><a data-contact="blog" hidden>Blog ↗</a><p class="contact-pending">연락처 업데이트 예정</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <span>© 2026 KOO BONWOOK</span><a href="#home">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
