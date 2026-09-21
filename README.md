@@ -49,6 +49,6 @@ GitHub Pages에서 사용할 브랜치의 `/ (root)`를 배포 대상으로 지�
 - `data-nav`는 메인 페이지에서 상단 메뉴와 연결합니다. 상세 페이지에서는 상단 Projects 메뉴가 활성화됩니다.
 - 직접 앵커 접속과 역방향 스크롤도 지원합니다. JavaScript가 비활성화되어도 본문과 일반 링크 목차를 사용할 수 있습니다.
 
-## CSS / JavaScript 수정 후
+## 페이지 / CSS / JavaScript 수정 후
 
-배포 전에 `python3 scripts/update-asset-versions.py`를 실행합니다. 파일 내용의 해시를 CSS와 JavaScript URL의 `?v=` 값에 반영해, 이전 배포의 브라우저/CDN 캐시와 새 HTML이 섞이는 문제를 방지합니다. 수정된 HTML도 함께 배포합니다. 별도 패키지 설치는 필요하지 않습니다.
+배포 전에 `python3 scripts/update-asset-versions.py`를 실행합니다. 파일 내용의 해시를 CSS와 JavaScript URL의 `?v=` 값에 반영합니다. HTML 내용과 자산 버전을 바탕으로 프로젝트 간 이동 링크 및 모바일 선택 메뉴의 페이지 URL에도 버전을 붙여, 이전 HTML이 캐시에 남아 오래된 CSS를 다시 요청하는 문제를 방지합니다. 수정된 HTML도 함께 배포합니다. 별도 패키지 설치는 필요하지 않습니다.
