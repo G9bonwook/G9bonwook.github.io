@@ -1260,3 +1260,34 @@ h1 {
   letter-spacing: .06em;
   color: var(--color-text-secondary);
 }
+
+/* Keep diagrams uncropped and let readers open the original at full size. */
+.project-figure {
+  margin-top: 36px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+.project-image-link {
+  display: block;
+  padding: 12px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  cursor: zoom-in;
+}
+.project-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--color-bg-soft);
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+.image-hint { color: var(--color-accent); font-size: 11px; }
+@media (max-width: 600px) {
+  .project-image-link { padding: 6px; }
+  .project-figure figcaption { padding: 12px 14px; }
+}

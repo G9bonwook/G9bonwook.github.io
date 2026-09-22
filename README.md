@@ -30,7 +30,14 @@ GitHub Pages에서 사용할 브랜치의 `/ (root)`를 배포 대상으로 지�
 ## 이미지 교체
 
 메인 프로필 사진은 `assets/images/common/bonwook-profile.png`이며 원본 비율로 작게 표시합니다.
-아키텍처/DAG는 상세 페이지의 `figure.visual-placeholder` 안에 있습니다. 파일을 assets 폴더에 넣은 뒤 내부의 `div.image-placeholder`를 다음 형태로 교체합니다.
+삽입된 그림은 `figure.project-figure`에서 원본 비율로 표시되며, 클릭하면 새 탭에서 원본을 엽니다.
+
+- `assets/images/nudge/au-churn-dag.png`: AU/Churn을 포함한 KPI mart DAG
+- `assets/images/nudge/commerce-kpi-dag.png`: 커머스 수집 DAG
+- `assets/images/gridam/cdc-pipeline.png`: CDC 기반 감정 추출 파이프라인
+- `assets/images/arah/architecture.png`: Arah 서비스 아키텍처
+
+아직 제공되지 않은 이미지 영역은 `figure.visual-placeholder`로 남겨 두었습니다. 파일을 assets 폴더에 넣은 뒤 내부의 `div.image-placeholder`를 다음 형태로 교체할 수 있습니다.
 
 ```html
 <img class="project-image" src="../assets/images/nudge/architecture.png" alt="실제 아키텍처 구성과 데이터 흐름에 대한 설명" width="1600" height="900" loading="lazy">
