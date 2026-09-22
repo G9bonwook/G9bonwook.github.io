@@ -20,6 +20,10 @@
 - 20일 백필 기준 slot_ms 약 14배 감소 / shuffle 약 7.8배 감소
 - 단순 속도 개선이 아니라 데이터 규모와 처리 조건에 맞는 구조로 개선
 
+### KPI 과소집계 문제 해결
+- 사용자 추가 제공 사실: 인턴 기간 KPI 과소집계 문제 해결 경험
+- 대상 지표, 원인, 해결 방식과 검증 수치는 아직 제공되지 않음. 기존 두 Case와의 연관성을 임의로 단정하지 않음.
+
 ### Short-form commerce KPI pipeline
 - 외부 API + commerce DB 기반 clip exposure → purchase 전환 지표
 - raw API 데이터를 GCS에 저장 / BigQuery + dbt mart 구성

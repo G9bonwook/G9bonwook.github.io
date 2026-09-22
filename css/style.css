@@ -1296,8 +1296,8 @@ h1 {
 .home-page .hero .eyebrow { font-size: 17px; font-weight: 700; letter-spacing: -.02em; }
 .hero-experience { display: block; margin-bottom: 8px; }
 .work-featured .work-identity h3 { font-size: 30px; }
-.work-featured .work-evidence strong { display: block; font-size: clamp(24px, 2.5vw, 32px); letter-spacing: -.04em; }
-.work-featured .work-evidence > span { display: block; margin-top: 6px; }
+.work-featured .work-evidence strong { font-size: inherit; letter-spacing: inherit; }
+.work-featured .work-evidence > span { display: inline; }
 .case-outline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 28px; font-size: 13px; }
 .case-outline a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-accent); }
 .case-outline a:hover { text-decoration: underline; text-underline-offset: 4px; }
