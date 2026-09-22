@@ -9,7 +9,7 @@
 - `projects/arah.html`: RAG chunking 실험, 피드백, weight decay, Airflow 자동화
 - `projects/gridam.html`: log-based CDC 선택과 데이터 흐름, 조회 성능 최적화
 - `css/style.css`: 공통 디자인 변수, 반응형 레이아웃, 접근성 스타일
-- `js/main.js`: 모바일 메뉴, 현재 소제목 표시, 목차 이동, 등장 효과, 연락처 설정
+- `js/main.js`: 모바일 메뉴, 현재 소제목 표시, 목차 이동, 등장 효과
 - `portfolio-brief.md`: 콘텐츠 기준과 승인된 사이트 구조
 - `assets/images/{nudge,arah,gridam,oracle,common}/`: 프로젝트 이미지와 프로필 사진
 - `assets/docs/`: 공개 문서
@@ -23,7 +23,7 @@ GitHub Pages에서 사용할 브랜치의 `/ (root)`를 배포 대상으로 지�
 ## 콘텐츠와 연락처
 
 화면의 요약은 `index.html`, 상세 설명은 해당 `projects/*.html`에서 수정합니다. 결과나 기간을 변경할 때 요약과 상세 페이지의 일치 여부를 확인합니다.
-`js/main.js`의 `contactLinks`에 확인된 GitHub, `mailto:` 이메일, Blog URL을 넣습니다. 빈 값의 링크는 숨겨집니다.
+연락처는 `index.html`의 Contact 섹션에서 수정합니다. 이메일은 `mailto:`, 전화는 `tel:` 링크이며 JavaScript 없이도 표시됩니다. GitHub 주소는 사용자 요청으로 표시하지 않습니다.
 미제공 검증 절차는 보완 예정으로 표시했습니다. 근거가 추가되면 해당 내용을 수정합니다.
 기존 `docs/portfolio-brief.md`는 보존했습니다.
 

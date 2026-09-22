@@ -1,21 +1,3 @@
-// Add verified public URLs here. Empty values keep contact links hidden.
-const contactLinks = {
-  github: '',
-  email: '', // e.g. mailto:your-address@example.com
-  blog: ''
-};
-
-Object.entries(contactLinks).forEach(([name, url]) => {
-  if (!url) return;
-  document.querySelectorAll(`[data-contact="${name}"]`).forEach(link => {
-    link.href = url;
-    link.hidden = false;
-  });
-});
-if (Object.values(contactLinks).some(Boolean)) {
-  document.querySelectorAll('.contact-pending').forEach(element => { element.hidden = true; });
-}
-
 document.documentElement.classList.add('js');
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
@@ -106,16 +88,17 @@ function updateReadingGuide() {
     else link.removeAttribute('aria-current');
   });
   const current = tocLinks[index];
-  if (window.innerWidth >= 1280) {
-    const bounds = readingGuide.getBoundingClientRect();
-    const item = current.getBoundingClientRect();
-    if (item.bottom > bounds.bottom - 12) readingGuide.scrollTop += item.bottom - bounds.bottom + 12;
-    else if (item.top < bounds.top + 12) readingGuide.scrollTop -= bounds.top - item.top + 12;
-  }
   const label = current.dataset.label;
   document.querySelector('.reading-title').textContent = label;
   document.querySelector('.reading-count').textContent = `${String(index + 1).padStart(2, '0')} / ${String(tocLinks.length).padStart(2, '0')}`;
   sectionSelect.value = current.hash;
+  if (window.innerWidth >= 1280) {
+    const bounds = readingGuide.getBoundingClientRect();
+    const status = document.querySelector('.reading-status').getBoundingClientRect();
+    const item = current.getBoundingClientRect();
+    if (item.bottom > bounds.bottom - 12) readingGuide.scrollTop += item.bottom - bounds.bottom + 12;
+    else if (item.top < status.bottom + 12) readingGuide.scrollTop -= status.bottom - item.top + 12;
+  }
   navigation.querySelectorAll('a[href^="#"]').forEach(link => {
     if (link.hash === `#${current.dataset.nav}`) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
@@ -142,9 +125,14 @@ sectionSelect.addEventListener('change', () => {
   target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
 });
 window.addEventListener('scroll', scheduleReadingUpdate, { passive: true });
-window.addEventListener('resize', scheduleReadingUpdate);
+function refreshReadingGuide() {
+  activeIndex = -1;
+  scheduleReadingUpdate();
+}
+window.addEventListener('resize', refreshReadingGuide);
 window.addEventListener('hashchange', scheduleReadingUpdate);
-window.addEventListener('pageshow', scheduleReadingUpdate);
+// A restored page can retain the destination selected before leaving it.
+window.addEventListener('pageshow', refreshReadingGuide);
 window.addEventListener('load', scheduleReadingUpdate);
 if ('ResizeObserver' in window) new ResizeObserver(scheduleReadingUpdate).observe(document.querySelector('main'));
 updateReadingGuide();
