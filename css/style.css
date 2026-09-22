@@ -1314,3 +1314,9 @@ h1 {
   .home-page .hero-actions { gap: 8px; }
   .work-featured .work-identity h3 { font-size: 27px; }
 }
+
+/* Separate Nudge cases with existing colors and open typography. */
+.case-metrics-label { margin-top: 32px; color: var(--color-support); font-size: 13px; font-weight: 650; }
+.case-metrics-label + .metrics { margin-top: 16px; }
+.detail-section.case-start { margin-top: 32px; border-top: 3px solid var(--color-support-border); }
+.case-capabilities { margin-top: 18px; font-size: 13px; color: var(--color-support); line-height: 1.8; }

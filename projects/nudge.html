@@ -10,17 +10,17 @@
     <meta property="og:title" content="Nudge Healthcare | KOO BONWOOK">
     <meta property="og:description" content="AU/Churn 계산 구조 개선과 커머스 KPI 파이프라인. 20일 백필 기준 처리 비용과 기존 결과 40행 비교로 검증한 경험입니다.">
     <meta property="og:locale" content="ko_KR">
-    <link rel="stylesheet" href="../css/style.css?v=ecc990266f93">
+    <link rel="stylesheet" href="../css/style.css?v=4fb897b5e340">
     <script src="../js/main.js?v=7a9b4fb13cc6" defer></script>
   </head>
   <body class="project-page">
     <a class="skip-link" href="#main">본문으로 바로 가기</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="../index.html?v=9a79f69fd420#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
+        <a class="wordmark" href="../index.html?v=702f264b2e6f#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
         <nav id="navigation" aria-label="주 메뉴">
-          <a href="../index.html?v=9a79f69fd420#about">About</a><a href="../index.html?v=9a79f69fd420#work" aria-current="location">Projects</a><a href="../index.html?v=9a79f69fd420#research">Research</a><a href="../index.html?v=9a79f69fd420#contact">Contact</a>
+          <a href="../index.html?v=702f264b2e6f#about">About</a><a href="../index.html?v=702f264b2e6f#work" aria-current="location">Projects</a><a href="../index.html?v=702f264b2e6f#research">Research</a><a href="../index.html?v=702f264b2e6f#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -29,16 +29,16 @@
         <span class="reading-caption">Nudge Healthcare</span><span class="reading-count">01 / 07</span><strong class="reading-title">역할과 핵심 결과</strong>
       </div>
       <nav class="toc-navigation" aria-label="프로젝트와 본문 목차">
-        <a class="back-to-work" href="../index.html?v=9a79f69fd420#work">← 프로젝트 전체 보기</a>
+        <a class="back-to-work" href="../index.html?v=702f264b2e6f#work">← 프로젝트 전체 보기</a>
         <ul class="project-navigation">
           <li>
-            <a href="nudge.html?v=9a79f69fd420" aria-current="page">Nudge Healthcare</a>
+            <a href="nudge.html?v=702f264b2e6f" aria-current="page">Nudge Healthcare</a>
           </li>
           <li>
-            <a href="arah.html?v=9a79f69fd420">Arah · RAG</a>
+            <a href="arah.html?v=702f264b2e6f">Arah · RAG</a>
           </li>
           <li>
-            <a href="gridam.html?v=9a79f69fd420">GriDam · CDC</a>
+            <a href="gridam.html?v=702f264b2e6f">GriDam · CDC</a>
           </li>
         </ul>
         <p class="toc-caption">이 프로젝트의 내용</p>
@@ -47,7 +47,7 @@
             <a href="#overview" data-section data-label="역할과 핵심 결과" data-nav=""><span>01</span>역할과 핵심 결과</a>
           </li>
           <li>
-            <a href="#au-context" data-section data-label="AU/Churn · 문제와 선택" data-nav=""><span>02</span>AU/Churn · 문제와 선택</a>
+            <a href="#au-context" data-section data-label="AU/Churn · 배경과 판단" data-nav=""><span>02</span>AU/Churn · 배경과 판단</a>
           </li>
           <li>
             <a href="#au-build" data-section data-label="AU/Churn · 구현" data-nav=""><span>03</span>AU/Churn · 구현</a>
@@ -56,13 +56,13 @@
             <a href="#au-check" data-section data-label="AU/Churn · 검증과 결과" data-nav=""><span>04</span>AU/Churn · 검증과 결과</a>
           </li>
           <li>
-            <a href="#commerce-context" data-section data-label="Commerce · 문제와 선택" data-nav=""><span>05</span>Commerce · 문제와 선택</a>
+            <a href="#commerce-context" data-section data-label="Commerce · 배경과 판단" data-nav=""><span>05</span>Commerce · 배경과 판단</a>
           </li>
           <li>
             <a href="#commerce-build" data-section data-label="Commerce · 구현" data-nav=""><span>06</span>Commerce · 구현</a>
           </li>
           <li>
-            <a href="#commerce-check" data-section data-label="Commerce · 결과" data-nav=""><span>07</span>Commerce · 결과</a>
+            <a href="#commerce-check" data-section data-label="Commerce · 기준과 결과" data-nav=""><span>07</span>Commerce · 기준과 결과</a>
           </li>
         </ol>
       </nav>
@@ -71,28 +71,28 @@
         <select id="section-select">
           <optgroup label="현재 페이지">
             <option value="#overview">01 / 역할과 핵심 결과</option>
-            <option value="#au-context">02 / AU/Churn · 문제와 선택</option>
+            <option value="#au-context">02 / AU/Churn · 배경과 판단</option>
             <option value="#au-build">03 / AU/Churn · 구현</option>
             <option value="#au-check">04 / AU/Churn · 검증과 결과</option>
-            <option value="#commerce-context">05 / Commerce · 문제와 선택</option>
+            <option value="#commerce-context">05 / Commerce · 배경과 판단</option>
             <option value="#commerce-build">06 / Commerce · 구현</option>
-            <option value="#commerce-check">07 / Commerce · 결과</option>
+            <option value="#commerce-check">07 / Commerce · 기준과 결과</option>
           </optgroup>
           <optgroup label="프로젝트 이동">
-            <option value="arah.html?v=9a79f69fd420">Arah · RAG</option>
-            <option value="gridam.html?v=9a79f69fd420">GriDam · CDC</option>
+            <option value="arah.html?v=702f264b2e6f">Arah · RAG</option>
+            <option value="gridam.html?v=702f264b2e6f">GriDam · CDC</option>
           </optgroup>
-          <option value="../index.html?v=9a79f69fd420#work">프로젝트 전체 보기</option>
+          <option value="../index.html?v=702f264b2e6f#work">프로젝트 전체 보기</option>
         </select>
         <div class="reading-pagination">
-          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#au-context" aria-label="다음: AU/Churn · 문제와 선택"><span>다음</span> →</a>
+          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#au-context" aria-label="다음: AU/Churn · 배경과 판단"><span>다음</span> →</a>
         </div>
       </div>
     </aside>
     <main id="main">
       <div class="container detail-container">
         <section class="project-overview" id="overview" aria-labelledby="overview-title">
-          <a class="back-to-work" href="../index.html?v=9a79f69fd420#work">← 프로젝트 전체 보기</a><p class="eyebrow">EXPERIENCE 01 / DATA ENGINEERING</p><h1 id="overview-title">Nudge Healthcare</h1><p class="project-statement">운영 데이터를<br>의사결정 가능한 데이터로 만들었습니다.</p>
+          <a class="back-to-work" href="../index.html?v=702f264b2e6f#work">← 프로젝트 전체 보기</a><p class="eyebrow">EXPERIENCE 01 / DATA ENGINEERING</p><h1 id="overview-title">Nudge Healthcare</h1><p class="project-statement">운영 데이터를<br>의사결정 가능한 데이터로 만들었습니다.</p>
           <dl class="project-facts">
             <div>
               <dt>역할 / 작업</dt><dd>Data Engineering Intern</dd>
@@ -101,6 +101,7 @@
               <dt>기간</dt><dd>2026.04 — 2026.07</dd>
             </div>
           </dl>
+          <p class="case-metrics-label">Case 01 · AU/Churn SQL 성능 개선 결과</p>
           <div class="metrics">
             <div>
               <strong>14<span>×</span></strong><p>slot_ms 감소</p><span>20일 백필 기준 · 약 14배</span>
@@ -112,18 +113,27 @@
               <strong>0</strong><p>mismatch</p><span>기존 결과 40행 · 셀 단위 비교</span>
             </div>
           </div>
+          <nav class="case-outline" aria-label="Nudge 사례 바로가기"><a href="#au-context">Case 01 · SQL 성능 개선</a><a href="#commerce-context">Case 02 · 커머스 KPI 설계</a></nav>
         </section>
-        <section class="detail-section" id="au-context" aria-labelledby="au-context-title">
-          <p class="eyebrow">CASE 01 / AU · CHURN</p><h2 id="au-context-title">AU/Churn SQL의 장기 백필 성능을 개선했습니다.</h2>
+        <section class="detail-section case-start" id="au-context" aria-labelledby="au-context-title">
+          <p class="eyebrow">CASE 01 / AU · CHURN SQL 성능 개선</p>
+          <h2 id="au-context-title">장기 백필의 fan-out을 줄이고,<br>결과와 처리 비용을 검증했습니다.</h2>
+          <p class="case-capabilities">쿼리 최적화 · 20일 백필 비용 검증 · 결과 정합성 비교</p>
           <div class="decision-part">
-            <p class="stage-label">문제 / PROBLEM</p><h3>범위 JOIN에서 발생한 fan-out</h3><p>기존 BETWEEN 범위 JOIN은 과거 접속과 미래 재방문을 계산했습니다. 장기 백필 시 fan-out 문제를 확인했습니다.</p>
+            <p class="stage-label">배경 / WHY · CONTEXT</p><h3>과거 접속과 미래 재방문을 함께 계산</h3><p>AU·Churn 지표는 기준 날짜의 과거 접속 여부와 미래 재방문 여부를 계산해야 했습니다. 기존에는 BETWEEN 범위 JOIN으로 기간 조건을 적용했습니다.</p>
           </div>
           <div class="decision-part">
-            <p class="stage-label">선택 / DECISION</p><h3>데이터 규모와 처리 조건에 맞는 구조</h3><p>범위 JOIN을 UNIX_DATE + Window Function 기반 계산으로 바꾸기로 했습니다.</p>
+            <p class="stage-label">문제 / PROBLEM</p><h3>장기 백필에서 커지는 중간 결과</h3><p>장기 백필 시 범위 JOIN의 fan-out을 확인했습니다. 기간 조건에 맞는 행들이 결합되며 중간 결과가 늘어나는 구조를 개선 대상으로 삼았습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">가설 / HYPOTHESIS</p><h3>기간 조건을 Window로 계산하면 어떨까?</h3><p>검증할 가설은 결과를 유지하면서 범위 JOIN의 fan-out과 처리 비용을 줄일 수 있는지였습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">선택 / DECISION</p><h3>행을 결합하는 대신 기간 범위로 계산</h3><p>같은 과거 접속·미래 재방문 조건을 Window Function으로 계산하도록 선택했습니다. 날짜는 UNIX_DATE로 변환해 기간 계산에 사용했습니다.</p>
           </div>
         </section>
         <section class="detail-section" id="au-build" aria-labelledby="au-build-title">
-          <p class="eyebrow">CASE 01 / IMPLEMENTATION</p><h2 id="au-build-title">UNIX_DATE + Window Function으로 리팩터링했습니다.</h2><p class="detail-copy">과거 접속과 미래 재방문을 계산하는 AU / Churn 로직을 Window Function 기반으로 개선했습니다.</p>
+          <p class="eyebrow">CASE 01 / 구현 · IMPLEMENTATION</p><h2 id="au-build-title">범위 JOIN을 Window 계산으로 바꿨습니다.</h2><p class="detail-copy">기존 BETWEEN 범위 JOIN을 UNIX_DATE + Window Function으로 리팩터링했습니다. 아래는 AU/Churn을 포함한 KPI mart의 Airflow DAG입니다.</p>
           <figure class="project-figure">
             <a class="project-image-link" href="../assets/images/nudge/au-churn-dag.png" target="_blank" rel="noopener" aria-label="AU/Churn을 포함한 KPI mart Airflow DAG 원본 보기 (새 탭)">
               <img class="project-image" src="../assets/images/nudge/au-churn-dag.png" alt="외부 의존성 대기 이후 active user, churn, AU segmentation 등 dbt 모델의 실행과 테스트를 연결한 Airflow DAG" width="1976" height="990" loading="lazy" decoding="async">
@@ -132,34 +142,42 @@
           </figure>
         </section>
         <section class="detail-section evidence-section" id="au-check" aria-labelledby="au-check-title">
-          <p class="eyebrow">CASE 01 / VERIFICATION → RESULT</p><h2 id="au-check-title">결과를 비교하고, 처리 비용을 확인했습니다.</h2>
+          <p class="eyebrow">CASE 01 / 검증 → 결과</p><h2 id="au-check-title">결과를 비교하고, 처리 비용을 확인했습니다.</h2>
           <div class="decision-part">
-            <p class="stage-label">검증 / VERIFICATION</p><h3>기존 결과 40행을 셀 단위로 비교</h3><p>변경 전후 결과를 비교해 mismatch 0을 확인했습니다. 처리 비용은 20일 백필을 기준으로 확인했습니다.</p>
+            <p class="stage-label">검증 / VERIFICATION</p><h3>기존 결과 40행을 셀 단위로 비교</h3><p>결과 정합성은 기존 결과 40행을 셀 단위로 비교했습니다. 처리 비용은 20일 백필 조건에서 slot_ms와 shuffle을 비교했습니다.</p>
           </div>
           <div class="decision-part">
-            <p class="stage-label">결과 / RESULT</p><h3>비교한 40행에서 mismatch 0, 처리 비용 감소</h3><p>20일 백필 기준 slot_ms는 약 14배, shuffle은 약 7.8배 감소했습니다. 단순한 속도 개선보다 데이터 규모와 처리 조건에 맞는 구조로 개선한 경험입니다.</p>
+            <p class="stage-label">결과 / RESULT</p><h3>비교한 40행에서 mismatch 0, 처리 비용 감소</h3><p>비교한 40행에서 mismatch 0을 확인했고, 20일 백필 기준 slot_ms는 약 14배, shuffle은 약 7.8배 감소했습니다. 장기 백필이라는 실제 처리 조건에 맞춰 구조를 바꾸고 결과와 비용을 함께 검증했습니다.</p>
           </div>
         </section>
-        <section class="detail-section" id="commerce-context" aria-labelledby="commerce-context-title">
-          <p class="eyebrow">CASE 02 / SHORT-FORM COMMERCE</p><h2 id="commerce-context-title">같은 주문 데이터도 산출 기준에 따라 판단이 달라집니다.</h2>
+        <section class="detail-section case-start" id="commerce-context" aria-labelledby="commerce-context-title">
+          <p class="eyebrow">CASE 02 / SHORT-FORM COMMERCE KPI PIPELINE</p>
+          <h2 id="commerce-context-title">데이터 연결을 넘어,<br>KPI의 산출 기준까지 설계했습니다.</h2>
+          <p class="case-capabilities">데이터 파이프라인 · KPI 정의 · 원본 보존 · 업무 맥락</p>
           <div class="decision-part">
-            <p class="stage-label">문제 / PROBLEM</p><h3>노출부터 구매까지 연결되는 KPI</h3><p>외부 API와 Commerce DB를 기반으로 clip exposure → purchase 전환 지표를 구성하고, 주문 단위 쿠폰을 상품별 KPI에 반영해야 했습니다.</p>
+            <p class="stage-label">배경 / WHY · CONTEXT</p><h3>콘텐츠 노출이 구매로 이어지는지 보기 위해</h3><p>Clip exposure → purchase 전환 지표를 만들기 위해 외부 API 데이터와 Commerce DB를 연결해야 했습니다.</p>
           </div>
           <div class="decision-part">
-            <p class="stage-label">선택 / DECISION</p><h3>상품별 가격 비율로 쿠폰 배분</h3><p>주문 단위 쿠폰을 상품별 가격 비율로 배분하는 산출 기준을 적용했습니다.</p>
+            <p class="stage-label">문제 / PROBLEM</p><h3>주문 단위 쿠폰을 상품별로 어떻게 반영할까?</h3><p>데이터 연결뿐 아니라 주문 단위 쿠폰의 상품별 배분 기준이 필요했습니다. 같은 원천 데이터라도 산출 기준에 따라 현업의 판단이 달라질 수 있기 때문입니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">가설 / HYPOTHESIS</p><h3>상품 가격 비율을 배분 기준으로 삼기</h3><p>상품 가격이 주문에서 차지하는 비율에 맞춰 쿠폰을 배분하면, 주문 단위 할인을 상품별 지표에 반영할 기준을 세울 수 있다고 봤습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">선택 / DECISION</p><h3>원본은 보존하고, 산출 기준은 mart에 반영</h3><p>주문 쿠폰은 상품별 가격 비율로 배분했습니다. API raw 데이터는 GCS에 저장하고, Commerce DB와 함께 BigQuery / dbt 기반 mart를 구성했습니다.</p>
           </div>
         </section>
         <section class="detail-section" id="commerce-build" aria-labelledby="commerce-build-title">
-          <p class="eyebrow">CASE 02 / IMPLEMENTATION</p><h2 id="commerce-build-title">Raw 적재에서 분석용 mart까지 연결했습니다.</h2>
+          <p class="eyebrow">CASE 02 / 구현 · IMPLEMENTATION</p><h2 id="commerce-build-title">Raw 적재에서 분석용 mart까지 연결했습니다.</h2>
           <ol class="flow flow-three" aria-label="커머스 KPI 데이터 흐름">
             <li>
-              외부 API + Commerce DB
+              외부 API
             </li>
             <li>
               GCS<span>API raw 적재</span>
             </li>
             <li>
-              BigQuery / dbt<span>Mart</span>
+              BigQuery / dbt<span>Commerce DB 결합 · Mart</span>
             </li>
           </ol>
           <p class="detail-copy">외부 API의 raw 데이터를 GCS에 저장하고, Commerce DB와 함께 BigQuery / dbt 기반 mart를 구성했습니다.</p>
@@ -171,13 +189,16 @@
           </figure>
         </section>
         <section class="detail-section evidence-section" id="commerce-check" aria-labelledby="commerce-check-title">
-          <p class="eyebrow">CASE 02 / RESULT</p><h2 id="commerce-check-title">데이터 품질에 업무 맥락과 산출 기준을 포함했습니다.</h2>
+          <p class="eyebrow">CASE 02 / 검증 기준 → 결과</p><h2 id="commerce-check-title">데이터 품질에 업무 맥락과 산출 기준을 포함했습니다.</h2>
           <div class="decision-part">
-            <p class="stage-label">결과 / RESULT</p><h3>Clip exposure → purchase 전환 지표 구성</h3><p>API와 Commerce DB를 연결한 전환 지표를 구성했습니다. 주문 쿠폰을 상품별 가격 비율로 배분하며, 산출 기준도 데이터 품질의 일부임을 배웠습니다.</p>
+            <p class="stage-label">검증 기준 / VERIFICATION CRITERIA</p><h3>원본 데이터와 쿠폰 배분 기준</h3><p>산출 결과를 확인할 때의 기준은 GCS에 저장한 API raw 데이터와 상품별 가격 비율에 따른 쿠폰 배분입니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">결과 / RESULT</p><h3>Clip exposure → purchase 전환 지표 구성</h3><p>API와 Commerce DB를 연결해 노출부터 구매까지의 전환 지표를 구성했습니다. 같은 데이터도 산출 기준에 따라 다른 판단으로 이어질 수 있어, 업무 맥락과 산출 기준까지 데이터 품질의 일부로 보게 됐습니다.</p>
           </div>
         </section>
         <nav class="project-pager" aria-label="프로젝트 이동">
-          <a href="../index.html?v=9a79f69fd420#work"><span>전체 경험</span><strong>프로젝트 목록으로 ↗</strong></a><a href="arah.html?v=9a79f69fd420"><span>다음 프로젝트</span><strong>Arah · RAG →</strong></a>
+          <a href="../index.html?v=702f264b2e6f#work"><span>전체 경험</span><strong>프로젝트 목록으로 ↗</strong></a><a href="arah.html?v=702f264b2e6f"><span>다음 프로젝트</span><strong>Arah · RAG →</strong></a>
         </nav>
       </div>
     </main>

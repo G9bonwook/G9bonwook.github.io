@@ -10,17 +10,17 @@
     <meta property="og:title" content="GriDam | KOO BONWOOK">
     <meta property="og:description" content="MySQL 기반 log-based CDC로 일기 저장과 감정 분석을 분리하고, 인덱스와 캐시 최적화로 조회 API를 개선한 경험입니다.">
     <meta property="og:locale" content="ko_KR">
-    <link rel="stylesheet" href="../css/style.css?v=ecc990266f93">
+    <link rel="stylesheet" href="../css/style.css?v=4fb897b5e340">
     <script src="../js/main.js?v=7a9b4fb13cc6" defer></script>
   </head>
   <body class="project-page">
     <a class="skip-link" href="#main">본문으로 바로 가기</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="../index.html?v=9a79f69fd420#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
+        <a class="wordmark" href="../index.html?v=702f264b2e6f#home" aria-label="KOO BONWOOK 홈">KOO BONWOOK<span class="brand-dot" aria-hidden="true"></span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="메뉴 열기"><span></span><span></span></button>
         <nav id="navigation" aria-label="주 메뉴">
-          <a href="../index.html?v=9a79f69fd420#about">About</a><a href="../index.html?v=9a79f69fd420#work" aria-current="location">Projects</a><a href="../index.html?v=9a79f69fd420#research">Research</a><a href="../index.html?v=9a79f69fd420#contact">Contact</a>
+          <a href="../index.html?v=702f264b2e6f#about">About</a><a href="../index.html?v=702f264b2e6f#work" aria-current="location">Projects</a><a href="../index.html?v=702f264b2e6f#research">Research</a><a href="../index.html?v=702f264b2e6f#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -29,16 +29,16 @@
         <span class="reading-caption">GriDam · CDC</span><span class="reading-count">01 / 05</span><strong class="reading-title">작업과 핵심 결과</strong>
       </div>
       <nav class="toc-navigation" aria-label="프로젝트와 본문 목차">
-        <a class="back-to-work" href="../index.html?v=9a79f69fd420#work">← 프로젝트 전체 보기</a>
+        <a class="back-to-work" href="../index.html?v=702f264b2e6f#work">← 프로젝트 전체 보기</a>
         <ul class="project-navigation">
           <li>
-            <a href="nudge.html?v=9a79f69fd420">Nudge Healthcare</a>
+            <a href="nudge.html?v=702f264b2e6f">Nudge Healthcare</a>
           </li>
           <li>
-            <a href="arah.html?v=9a79f69fd420">Arah · RAG</a>
+            <a href="arah.html?v=702f264b2e6f">Arah · RAG</a>
           </li>
           <li>
-            <a href="gridam.html?v=9a79f69fd420" aria-current="page">GriDam · CDC</a>
+            <a href="gridam.html?v=702f264b2e6f" aria-current="page">GriDam · CDC</a>
           </li>
         </ul>
         <p class="toc-caption">이 프로젝트의 내용</p>
@@ -47,16 +47,16 @@
             <a href="#overview" data-section data-label="작업과 핵심 결과" data-nav=""><span>01</span>작업과 핵심 결과</a>
           </li>
           <li>
-            <a href="#context" data-section data-label="문제와 선택" data-nav=""><span>02</span>문제와 선택</a>
+            <a href="#context" data-section data-label="CDC · 배경과 판단" data-nav=""><span>02</span>CDC · 배경과 판단</a>
           </li>
           <li>
-            <a href="#implementation" data-section data-label="구현과 데이터 흐름" data-nav=""><span>03</span>구현과 데이터 흐름</a>
+            <a href="#implementation" data-section data-label="CDC · 구현" data-nav=""><span>03</span>CDC · 구현</a>
           </li>
           <li>
-            <a href="#verification" data-section data-label="검증 근거" data-nav=""><span>04</span>검증 근거</a>
+            <a href="#verification" data-section data-label="CDC · 설계 결과" data-nav=""><span>04</span>CDC · 설계 결과</a>
           </li>
           <li>
-            <a href="#result" data-section data-label="결과" data-nav=""><span>05</span>결과</a>
+            <a href="#result" data-section data-label="조회 성능 최적화" data-nav=""><span>05</span>조회 성능 최적화</a>
           </li>
         </ol>
       </nav>
@@ -65,26 +65,26 @@
         <select id="section-select">
           <optgroup label="현재 페이지">
             <option value="#overview">01 / 작업과 핵심 결과</option>
-            <option value="#context">02 / 문제와 선택</option>
-            <option value="#implementation">03 / 구현과 데이터 흐름</option>
-            <option value="#verification">04 / 검증 근거</option>
-            <option value="#result">05 / 결과</option>
+            <option value="#context">02 / CDC · 배경과 판단</option>
+            <option value="#implementation">03 / CDC · 구현</option>
+            <option value="#verification">04 / CDC · 설계 결과</option>
+            <option value="#result">05 / 조회 성능 최적화</option>
           </optgroup>
           <optgroup label="프로젝트 이동">
-            <option value="nudge.html?v=9a79f69fd420">Nudge Healthcare</option>
-            <option value="arah.html?v=9a79f69fd420">Arah · RAG</option>
+            <option value="nudge.html?v=702f264b2e6f">Nudge Healthcare</option>
+            <option value="arah.html?v=702f264b2e6f">Arah · RAG</option>
           </optgroup>
-          <option value="../index.html?v=9a79f69fd420#work">프로젝트 전체 보기</option>
+          <option value="../index.html?v=702f264b2e6f#work">프로젝트 전체 보기</option>
         </select>
         <div class="reading-pagination">
-          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#context" aria-label="다음: 문제와 선택"><span>다음</span> →</a>
+          <a class="reading-previous" href="#overview" aria-disabled="true" tabindex="-1" aria-label="이전 항목 없음">← <span>이전</span></a><a class="reading-next" href="#context" aria-label="다음: CDC · 배경과 판단"><span>다음</span> →</a>
         </div>
       </div>
     </aside>
     <main id="main">
       <div class="container detail-container">
         <section class="project-overview" id="overview" aria-labelledby="overview-title">
-          <a class="back-to-work" href="../index.html?v=9a79f69fd420#work">← 프로젝트 전체 보기</a><p class="eyebrow">PROJECT 03 / DATA CONSISTENCY</p><h1 id="overview-title">GriDam</h1><p class="project-statement">저장과 분석 사이의<br>데이터 일관성을 설계했습니다.</p>
+          <a class="back-to-work" href="../index.html?v=702f264b2e6f#work">← 프로젝트 전체 보기</a><p class="eyebrow">PROJECT 03 / DATA CONSISTENCY</p><h1 id="overview-title">GriDam</h1><p class="project-statement">저장과 분석 사이의<br>데이터 일관성을 설계했습니다.</p>
           <dl class="project-facts">
             <div>
               <dt>역할 / 작업</dt><dd>일기 저장 · 감정 분석 분리 / CDC 구조 설계</dd>
@@ -94,21 +94,28 @@
             </div>
           </dl>
           <div class="outcome-summary">
-            <strong>조회 API 5초 → 1초</strong><p>인덱스 / 캐시 최적화로 개선한 조회 응답 시간입니다.</p><span class="outcome-context">LLM 기반 감정 일기 서비스</span>
+            <strong>MySQL을 기준으로 연결한 CDC</strong><p>일기 저장과 감정 분석을 분리하고, DB 변경 로그를 후속 처리의 기준으로 삼았습니다.</p><span class="outcome-context">LLM 기반 감정 일기 서비스</span>
           </div>
-          <nav class="case-outline" aria-label="프로젝트 핵심 흐름"><a href="#context">문제 · 선택</a><span aria-hidden="true">→</span><a href="#implementation">구현</a><span aria-hidden="true">→</span><a href="#verification">검증</a><span aria-hidden="true">→</span><a href="#result">결과</a></nav>
+          <nav class="case-outline" aria-label="프로젝트 핵심 흐름"><a href="#context">A · CDC 설계</a><a href="#result">B · 조회 성능 최적화</a></nav>
         </section>
-        <section class="detail-section" id="context" aria-labelledby="context-title">
-          <p class="eyebrow">PROBLEM → DECISION</p><h2 id="context-title">DB commit과 event publish 사이의 불일치 위험을 고려했습니다.</h2>
+        <section class="detail-section case-start" id="context" aria-labelledby="context-title">
+          <p class="eyebrow">A / CDC · 데이터 일관성</p><h2 id="context-title">저장과 분석은 분리하되,<br>데이터의 기준은 하나로 맞췄습니다.</h2>
           <div class="decision-part">
-            <p class="stage-label">문제 / PROBLEM</p><h3>일기 저장과 감정 분석의 분리</h3><p>일기 저장과 감정 분석을 분리하면서, DB commit과 event publish 시점이 일치하지 않을 수 있는 문제를 고려했습니다.</p>
+            <p class="stage-label">배경 / WHY · CONTEXT</p><h3>일기 저장과 LLM 감정 분석의 분리</h3><p>LLM 기반 감정 일기 서비스에서 일기 저장과 감정 분석을 분리했습니다. 분석을 별도로 처리하면서도 실제 저장 상태에 맞춰 후속 처리가 이어지도록 설계해야 했습니다.</p>
           </div>
           <div class="decision-part">
-            <p class="stage-label">선택 / DECISION</p><h3>MySQL을 기준으로 log-based CDC 선택</h3><p>MySQL을 Source of Truth로 설정하고, commit과 event publish의 불일치 문제를 피하기 위해 로그 기반 CDC를 선택했습니다.</p>
+            <p class="stage-label">문제 / PROBLEM</p><h3>DB 저장과 이벤트 발행 사이의 간격</h3><p>DB commit과 event publish는 별개로 수행됩니다. 저장은 성공했지만 이벤트 발행이 실패하면, 저장된 일기가 후속 분석으로 전달되지 않을 수 있다는 위험을 고려했습니다.</p>
           </div>
+          <div class="decision-part">
+            <p class="stage-label">가설 / HYPOTHESIS</p><h3>실제 commit된 변경을 후속 처리의 기준으로</h3><p>애플리케이션의 이벤트 발행 대신 DB 변경 로그를 기준으로 삼으면, 저장 상태와 분석 흐름이 참조하는 기준을 하나로 맞출 수 있다고 봤습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">선택 / DECISION</p><h3>MySQL을 Source of Truth로 두고 log-based CDC 선택</h3><p>일기가 저장되는 MySQL을 기준 데이터로 설정했습니다. Binlog를 Debezium으로 수집하고 Kafka를 통해 분석으로 전달하는 구조를 선택해, DB 저장과 별도 이벤트 발행 시점의 불일치 문제를 피하고자 했습니다.</p>
+          </div>
+
         </section>
         <section class="detail-section" id="implementation" aria-labelledby="implementation-title">
-          <p class="eyebrow">IMPLEMENTATION</p><h2 id="implementation-title">저장된 변경 사항을 분석 흐름에 전달했습니다.</h2>
+          <p class="eyebrow">A / 구현 · IMPLEMENTATION</p><h2 id="implementation-title">저장된 변경 사항을 분석 흐름에 전달했습니다.</h2>
           <ol class="flow flow-six" aria-label="CDC 데이터 흐름">
             <li>
               MySQL
@@ -129,7 +136,7 @@
               MongoDB
             </li>
           </ol>
-          <p class="detail-copy">Schema Registry + Avro를 적용하고, MySQL / MongoDB / Redis의 역할을 분리했습니다.</p>
+          <p class="detail-copy">MySQL의 변경 로그를 Kafka로 전달하고, Python Consumer의 감정 분석 결과는 MongoDB로 이어지도록 구성했습니다. Schema Registry + Avro를 적용하고 MySQL / MongoDB / Redis의 역할을 분리했습니다.</p>
           <figure class="project-figure">
             <a class="project-image-link" href="../assets/images/gridam/cdc-pipeline.png" target="_blank" rel="noopener" aria-label="CDC 기반 감정 추출 데이터 파이프라인 원본 보기 (새 탭)">
               <img class="project-image" src="../assets/images/gridam/cdc-pipeline.png" alt="MySQL의 일기 변경을 Kafka Connect와 Python 감정 분석 Consumer를 거쳐 MongoDB로 전달하는 CDC 데이터 파이프라인" width="1163" height="440" loading="lazy" decoding="async">
@@ -138,13 +145,20 @@
           </figure>
         </section>
         <section class="detail-section evidence-section" id="verification" aria-labelledby="verification-title">
-          <p class="eyebrow">VERIFICATION</p><h2 id="verification-title">인덱스 / 캐시 튜닝 전후의 조회 응답 시간입니다.</h2><p class="detail-copy">조회 API 응답 시간은 튜닝 전 5초에서 튜닝 후 1초로 개선됐습니다.</p>
+          <p class="eyebrow">A / 설계 결과 · RESULT · OPERATION</p><h2 id="verification-title">저장된 변경을 기준으로<br>후속 분석을 연결했습니다.</h2><p class="detail-copy">일기 저장 요청과 감정 분석 흐름을 분리하고, MySQL의 commit된 변경 로그를 후속 처리의 기준으로 삼았습니다. Schema Registry + Avro로 이벤트 스키마를 관리하는 구조를 구성했습니다.</p>
         </section>
-        <section class="detail-section evidence-section" id="result" aria-labelledby="result-title">
-          <p class="eyebrow">RESULT</p><h2 id="result-title">데이터 흐름을 분리하고 조회 성능을 개선했습니다.</h2><p class="detail-copy">일기 저장과 감정 분석을 CDC로 분리했습니다. 별도로 인덱스 / 캐시 최적화를 통해 조회 API를 5초에서 1초로 개선했습니다.</p><p class="metric-note">조회 성능 개선은 인덱스 / 캐시 최적화의 결과입니다.</p>
+        <section class="detail-section evidence-section case-start" id="result" aria-labelledby="result-title">
+          <p class="eyebrow">B / 조회 성능 최적화 · PERFORMANCE OPTIMIZATION</p><h2 id="result-title">조회 성능은 별도의<br>인덱스·캐시 최적화로 개선했습니다.</h2>
+          <div class="decision-part">
+            <p class="stage-label">문제 / PROBLEM</p><h3>조회 API 응답 시간 5초</h3><p>데이터 흐름 설계와 별도로, 조회 API의 응답 시간을 개선했습니다.</p>
+          </div>
+          <div class="decision-part">
+            <p class="stage-label">조치 / ACTION</p><h3>인덱스·캐시 튜닝</h3><p>조회 성능을 개선하기 위해 인덱스와 캐시를 최적화했습니다.</p>
+          </div>
+          <div class="outcome-summary"><strong>조회 API 5초 → 1초</strong><p>인덱스·캐시 튜닝 전후의 조회 응답 시간입니다.</p><span class="outcome-context">이 개선은 CDC 도입 효과가 아니라 인덱스·캐시 최적화의 결과입니다.</span></div>
         </section>
         <nav class="project-pager" aria-label="프로젝트 이동">
-          <a href="arah.html?v=9a79f69fd420"><span>이전 프로젝트</span><strong>Arah · RAG →</strong></a><a href="../index.html?v=9a79f69fd420#work"><span>전체 경험</span><strong>프로젝트 목록으로 ↗</strong></a>
+          <a href="arah.html?v=702f264b2e6f"><span>이전 프로젝트</span><strong>Arah · RAG →</strong></a><a href="../index.html?v=702f264b2e6f#work"><span>전체 경험</span><strong>프로젝트 목록으로 ↗</strong></a>
         </nav>
       </div>
     </main>
