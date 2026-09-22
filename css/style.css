@@ -1291,3 +1291,26 @@ h1 {
   .project-image-link { padding: 6px; }
   .project-figure figcaption { padding: 12px 14px; }
 }
+
+/* Recruiter scan: role first, one lead experience, compact section links. */
+.home-page .hero .eyebrow { font-size: 17px; font-weight: 700; letter-spacing: -.02em; }
+.hero-experience { display: block; margin-bottom: 8px; }
+.work-featured .work-identity h3 { font-size: 30px; }
+.work-featured .work-evidence strong { display: block; font-size: clamp(24px, 2.5vw, 32px); letter-spacing: -.04em; }
+.work-featured .work-evidence > span { display: block; margin-top: 6px; }
+.case-outline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 28px; font-size: 13px; }
+.case-outline a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-accent); }
+.case-outline a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.case-outline > span { color: var(--color-text-secondary); }
+.dag-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 20px; margin-top: 36px; }
+.dag-gallery .project-figure { margin: 0; min-width: 0; }
+@media (max-width: 600px) {
+  .dag-gallery { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .home-page .hero { min-height: auto; padding-bottom: 24px; }
+  .home-page .hero .eyebrow { font-size: 15px; }
+  .home-page .hero-specialties { font-size: 12px; margin-top: 20px; }
+  .home-page .hero-actions { gap: 8px; }
+  .work-featured .work-identity h3 { font-size: 27px; }
+}
